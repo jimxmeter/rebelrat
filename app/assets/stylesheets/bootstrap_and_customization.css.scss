@@ -1,17 +1,24 @@
+@import url(http://fonts.googleapis.com/css?family=Average+Sans);
+
+$body-bg: 							#32313B;
+$font-family-sans-serif: 			'Average Sans';
+$navbar-default-bg: 				#25242C;
+$navbar-default-link-color: 		#EC3F8C;
+$jumbotron-bg: 						#25242C;
+$jumbotron-color: 					white;
+$jumbotron-heading-color: 			#39B1C6;
+$brand-primary: 					#EC3F8C;
+$brand-success:						#1FD26A;
+$navbar-default-link-hover-color:	white;
 
 
-$body-bg: 						#32313B;
-
-$navbar-default-bg: 			#25242C;
-$navbar-default-link-color: 	#EC3F8C;
-
-$jumbotron-bg: 					#25242C;
-$jumbotron-color: 				white;
-$jumbotron-heading-color: 		#39B1C6;
-$brand-primary: #EC3F8C;
 
 
 .center {
-		text-align: center;
+	text-align: center;
+}
+
+.navbar {
+	font-weight: bold;
 }
 @import 'bootstrap';
