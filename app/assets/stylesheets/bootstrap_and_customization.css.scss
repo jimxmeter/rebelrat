@@ -1,16 +1,17 @@
 
 
-$body-bg: #32313B;
+$body-bg: 						#32313B;
 
-$navbar-default-bg: #25242C;
-$navbar-default-link-color: #EC3F8C;
+$navbar-default-bg: 			#25242C;
+$navbar-default-link-color: 	#EC3F8C;
 
-$jumbotron-bg: #25242C;
-$jumbotron-color: #39B1C6;
-$jumbotron-heading-color: #EC3F8C;
-
-
-
+$jumbotron-bg: 					#25242C;
+$jumbotron-color: 				white;
+$jumbotron-heading-color: 		#39B1C6;
 $brand-primary: #EC3F8C;
 
+
+.center {
+		text-align: center;
+}
 @import 'bootstrap';
