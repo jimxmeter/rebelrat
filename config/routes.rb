@@ -1,4 +1,6 @@
 Rebelrat::Application.routes.draw do
+  
+  devise_for :users
   root "pages#home"
   get "music" => "pages#music"
   get "life" => "pages#life"
