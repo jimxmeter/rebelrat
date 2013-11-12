@@ -11,15 +11,16 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :description %><br>
-    <%= f.text_field :description %>
+  <div class="form-group">
+    <div class="field">
+      <%= f.label :description %><br>
+      <%= f.text_field :description, autofocus: true, class: "form-control"  %>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :string %><br>
-    <%= f.text_field :string %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
+
+   
+    
+    <div class="actions">
+      <%= f.submit "Post", class: "btn btn-primary" %>
+    </div>
+  <% end %>
