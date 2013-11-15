@@ -5,16 +5,17 @@
 	</div>
 	
 	<div class="panel-body">
-		<div class="form-group">
+	<div class="form-group">
 		<p>
-  <strong>Description:</strong>
-  <%= @pin.description %>
-</p>
+		<%= image_tag @pin.image.url %>	
+  		<strong>Description:</strong>
+  		<%= @pin.description %>
+		</p>
 
-<p>
-  <strong>String:</strong>
-  <%= @pin.string %>
-</p>
+		<p>
+		  <strong>String:</strong>
+		  <%= @pin.string %>
+		</p>
  		</div>
  	</div>
  
