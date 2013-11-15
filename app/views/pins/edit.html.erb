@@ -10,8 +10,8 @@
  
 	
 	 <div class="panel-footer">
-	 	<%= link_to 'Back', pins_path %>
-	 </div>
+	 	<%= link_to 'Back', pins_path %> 
+	 	<%= link_to 'Delete', @pin, method: :delete, data: { confirm: 'Are you sure?' } %>	
 </div>
 
 
