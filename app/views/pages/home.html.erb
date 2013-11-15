@@ -2,14 +2,8 @@
 
 	<h1>a fun place for white girls to visit </h1>
 	
+	<p>
+		<%= link_to "Play now", "#", class: "btn btn-success btn-lg" %> 
 
-	<% if user_signed_in? %>
-		<%= link_to "Play now", "www.whitegirlmusic.com", class: "btn btn-success btn-lg" %> 
-	<% else%>
-		<p>
-		<%= link_to "Log in", new_user_session_path, class: "btn btn-success btn-lg" %> 	
-		<%= link_to "Sign up for free", new_user_registration_path, class: "btn btn-primary btn-lg" %> 
-		</p>
-	<% end %>
-
-
+		
+		<%= link_to "Sign up for free", "#", class: "btn btn-primary btn-lg" %> </p>

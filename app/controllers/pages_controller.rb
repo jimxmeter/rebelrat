@@ -1,14 +1,7 @@
 
-  def music
-  end
-
-  def life
-  end
-
-  def style
-  end
-
+  def about
   def home
+  end
   end
 class PagesController < ApplicationController
 end
