@@ -1,24 +1,27 @@
 <div class="row">
   <div class="col-md-offset-2 col-md-8">
-    <div class="panel panel-navbar-default-bg">
-      <div align = "right">
-         <%= link_to new_pin_path do %>
-              <span class="glyphicon glyphicon-remove"></span>
-            <% end %>
-      </div>
+    <div class="panel panel-$navbar-default-bg">
+    <div align="right">
+    <%= link_to pins_path(@pin) do %>
+        <span class="glyphicon glyphicon-remove"></span>
+      <% end %>
+    </div>
       <div class="panel-heading center">
         <%= image_tag @pin.image.url(:large) %>
       </div>
-      <div align="right">
-        <% if @pin.user == current_user %>
-          <%= link_to edit_pin_path do %>
-              <span class="glyphicon glyphicon-edit"></span>Edit
-            <% end %>
-        </div>
+      <div align="center">
+      <% if @pin.user == current_user %>
+         <%= link_to edit_pin_path(@pin) do %>
+        <span class="glyphicon glyphicon-edit"></span>
+        Edit
+      <% end %>
+        <% end %>
+      </div>
       <div class="panel-body">
         <p><%= @pin.description %></p>
         <p><strong><%= @pin.user.email if @pin.user %></strong></p>
-        <% end %>
+
+        
 
       </div>
     </div>
