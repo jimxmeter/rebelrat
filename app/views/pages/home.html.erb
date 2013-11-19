@@ -1,10 +1,12 @@
 	<div class="jumbotron center">
 
-	<h1>a fun place for white girls to visit </h1>
+	<h1>This is the soundtrack to my life.</h1>
 	
 
 	<% if user_signed_in? %>
-		<%= link_to "Play now", "www.whitegirlmusic.com", class: "btn btn-success btn-lg" %> 
+		<div align = 'center'>
+       <%= link_to 'New LifeTrack', new_pin_path, class: 'btn btn-success' %>
+      </button>
 	<% else%>
 		<p>
 		<%= link_to "Log in", new_user_session_path, class: "btn btn-success btn-lg" %> 	
