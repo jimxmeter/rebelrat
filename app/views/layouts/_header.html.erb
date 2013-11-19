@@ -16,12 +16,18 @@
 <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
     <ul class="nav navbar-nav">
     <% if user_signed_in? %>
-      <li><%= link_to 'New LifeTrack', new_pin_path, class: 'btn-default btn-success'%> 
-      <li><%= link_to 'Play', pins_path %>
+     <li>
+            <%= link_to new_pin_path do %>
+              <div style="color:#1FD26A"><span class="glyphicon glyphicon-th-list"></span> New LifeTrack
+              </div>
+            <% end %>
+          </li>
+
+      <li><%= link_to 'Albums', pins_path, class: "btn btn-info" %>
       <li><%= link_to "My Account",edit_user_registration_path %>
       <li><%= link_to "Log Out", destroy_user_session_path, method: :delete %>
     <% else%>
-      <li><%= link_to "Sign In", new_user_session_path %>
+      <li><%= link_to "Log In", new_user_session_path %>
     <% end%>    
     </ul>
   </div><!-- /.navbar-collapse -->
