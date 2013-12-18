@@ -1,12 +1,19 @@
+<div class="row">
+  <div class="col-md-offset-4 col-md-4">
 <div class="panel panel-primary">
-		<div class="panel-heading"><h1>Sign into your #WGM account</h1> 
+		<div class="panel-heading"><h1>Sign in</h1> 
 		</div>	
 
 	<%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
 	  
 	<div class="panel-body">
 		<div class="form-group">
-	  		
+		<div class="form-group">
+       
+       		<%= f.label :name %>
+       		<%= f.text_field :name, class: "form-control", :autofocus => true %>
+     	</div>
+
 	  		<%= f.label :email %><br />
 	 	 	<%= f.email_field :email, autofocus: true, class: "form-control" %></div>
 	 	
@@ -31,4 +38,6 @@
 		<div class="panel-footer">
 			<%= render "devise/shared/links" %>
 		</div>
+</div>
+</div>
 </div>

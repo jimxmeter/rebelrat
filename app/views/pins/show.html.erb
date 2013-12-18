@@ -7,7 +7,7 @@
       <% end %>
     </div>
       <div class="panel-heading center">
-        <%= image_tag @pin.image.url(:large) %>
+        <%= image_tag @pin.image.url(:medium)%>
       </div>
       <div align="center">
       <% if @pin.user == current_user %>
@@ -20,10 +20,11 @@
       <div class="panel-body">
         <p><%= @pin.description %></p>
         <p><strong><%= @pin.user.email if @pin.user %></strong></p>
-
-        
-
       </div>
     </div>
   </div>
 </div>
+
+
+
+

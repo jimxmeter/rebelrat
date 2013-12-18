@@ -27,10 +27,32 @@
       <li><%= link_to "My Account",edit_user_registration_path %>
       <li><%= link_to "Log Out", destroy_user_session_path, method: :delete %>
     <% else%>
+      
+      <li><button type="button" class="btn btn-success btn-lg">
+      
+      <div class="dropdown">
+      <a id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="/page.html">
+
+        <span class="glyphicon glyphicon-headphones"></span> Play Music
+      </a>
+
+
+      <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+    
+
+<li><%= render 'layouts/player' %></li>
+        
+    
+      </ul>
+      </div>
+    </button>
       <li><%= link_to "Log In", new_user_session_path %>
     <% end%>    
     </ul>
   </div><!-- /.navbar-collapse -->
+
+
+
 </nav>
 
     
